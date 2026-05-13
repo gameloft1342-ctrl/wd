@@ -1,0 +1,17 @@
+7.Create a web page that uses JavaScript to display dynamic content using DOM.
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Example</title>
+<script>
+function showMessage() {
+document.getElementById("output").innerHTML = "Hello! This is dynamic content.";
+}
+</script>
+</head>
+<body>
+<h2>DOM Manipulation Example</h2>
+<button onclick="showMessage()">Click Me</button>
+<p id="output"></p>
+</body>
+</html>
