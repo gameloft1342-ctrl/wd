@@ -1,0 +1,25 @@
+12.Create a PHP script to store and display values in an array.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Input</title>
+</head>
+<body>
+<h2>Enter 3 Names</h2>
+<form method="POST">
+Name 1: <input type="text" name="name[]"><br><br>
+Name 2: <input type="text" name="name[]"><br><br>
+Name 3: <input type="text" name="name[]"><br><br>
+<input type="submit" value="Submit">
+</form>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$names = $_POST['name']; // array
+echo "<h3>Names Entered:</h3>";
+foreach ($names as $n) {
+echo $n . "<br>";
+}
+}
+?>
+</body>
+</html>
