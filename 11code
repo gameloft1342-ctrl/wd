@@ -1,0 +1,23 @@
+11.Implement a PHP program for string manipulation (e.g., reverse, length, substring).
+<!DOCTYPE html>
+<html>
+<head>
+<title>String Manipulation</title>
+</head>
+<body>
+<h2>String Manipulation</h2>
+<form method="POST">
+Enter String: <input type="text" name="str"><br><br>
+<input type="submit" value="Submit">
+</form>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$str = $_POST['str'];
+echo "<h3>Results:</h3>";
+echo "Length: " . strlen($str) . "<br>";
+echo "Reverse: " . strrev($str) . "<br>";
+echo "Substring (first 5 chars): " . substr($str, 0, 5);
+}
+?>
+</body>
+</html>
