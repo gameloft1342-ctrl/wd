@@ -1,0 +1,92 @@
+6... Design a PHP script to display "Welcome" message and current date & time. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>PHP Date and Time</title> 
+</head> 
+<body style="text-align:center; margin-top:50px; font-family:Arial;"> 
+<?php 
+date_default_timezone_set("Asia/Kolkata"); 
+echo "<h1>Welcome</h1>"; 
+echo "<h3>Current Date: " . date("d-m-Y") . "</h3>"; 
+echo "<h3>Current Time: " . date("h:i:s A") . "</h3>"; 
+?> 
+</body> 
+</html> 
+Write a PHP program to accept form input and display it using the POST method. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>PHP Form</title> 
+</head> 
+<body> 
+<h2>Simple Form</h2> 
+<form method="POST"> 
+    Name: <input type="text" name="name"><br><br> 
+    Email: <input type="text" name="email"><br><br> 
+    <input type="submit" value="Submit"> 
+</form> 
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $name = $_POST['name']; 
+    $email = $_POST['email']; 
+    echo "<h3>Entered Details:</h3>"; 
+    echo "Name: " . $name . "<br>"; 
+    echo "Email: " . $email; 
+} 
+?> 
+</body> 
+</html> 
+ 
+ 
+7.. Implement a PHP program for string manipulation (e.g., reverse, length, substring). 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>String Manipulation</title> 
+</head> 
+<body> 
+<h2>String Manipulation</h2> 
+<form method="POST"> 
+    Enter String: <input type="text" name="str"><br><br> 
+    <input type="submit" value="Submit"> 
+</form> 
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $str = $_POST['str']; 
+    echo "<h3>Results:</h3>"; 
+    // Length 
+    echo "Length: " . strlen($str) . "<br>"; 
+    // Reverse 
+    echo "Reverse: " . strrev($str) . "<br>"; 
+    // Substring (first 5 characters) 
+    echo "Substring (first 5 chars): " . substr($str, 0, 5); 
+} 
+?> 
+</body> 
+</html> 
+Create a PHP script to store and display values in an array. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Array Input</title> 
+</head> 
+<body> 
+<h2>Enter 3 Names</h2> 
+<form method="POST"> 
+    Name 1: <input type="text" name="name[]"><br><br> 
+    Name 2: <input type="text" name="name[]"><br><br> 
+    Name 3: <input type="text" name="name[]"><br><br> 
+    <input type="submit" value="Submit"> 
+</form> 
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $names = $_POST['name']; // array 
+    echo "<h3>Names Entered:</h3>"; 
+    foreach ($names as $n) { 
+        echo $n . "<br>"; 
+    } 
+} 
+?> 
+</body> 
+</html>
