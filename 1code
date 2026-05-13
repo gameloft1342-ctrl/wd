@@ -1,0 +1,21 @@
+1.Create a simple HTML page displaying personal details using text formatting tags.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Personal Details</title>
+</head>
+<body>
+<h1><u>My Personal Details</u></h1>
+<p><b>Name:</b> John Doe</p>
+<p><strong>Age:</strong> 21</p>
+<p><i>Course:</i> Bachelor of Science in Computer Science</p>
+<p><em>College:</em> XYZ University</p>
+<p><u>Email:</u> johndoe@example.com</p>
+<h2>About Me</h2>
+<p>
+Hello! My name is <b>John Doe</b>. I am a <i>computer science student</i> 
+who loves <strong>coding</strong> and <em>learning new technologies</em>.
+</p>
+</body>
+</html>
