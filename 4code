@@ -1,0 +1,56 @@
+4.Apply internal, external, and inline CSS to style a web page with headings and tables.
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Example</title>
+<!-- Internal CSS -->
+<style>
+body {
+font-family: Arial;
+background-color: white;
+}
+h1 {
+text-align: center;
+}
+table {
+width: 50%;
+margin:auto;
+}
+th, td {
+border: 1px solid black;
+padding: 10px;
+text-align: center;
+}
+th {
+background-color: lightgray;
+}
+</style>
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Inline CSS -->
+<h1 style="color: blue">Student Information</h1>
+<table>
+<tr>
+<th>Name</th>
+<th>Marks</th>
+</tr>
+<tr>
+<td>Amit</td>
+<td>85</td>
+</tr>
+<tr>
+<td>Priya</td>
+<td>90</td>
+</tr>
+</table>
+</body>
+</html>
+h1 {
+font-family: Verdana;
+}
+table {
+border: 5px solid black;
+background-color: yellow;
+}
