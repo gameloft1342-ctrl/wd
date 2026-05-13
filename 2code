@@ -1,0 +1,51 @@
+2.Design a web page that includes an image, hyperlink, and a nested table.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Page with Image, Link, and Nested Table</title>
+</head>
+<body>
+<h1>My Sample Web Page</h1>
+<!-- Image -->
+<h2>My Image</h2>
+<img src="https://via.placeholder.com/150" alt="Sample Image">
+<!-- Hyperlink -->
+<h2>Visit a Website</h2>
+<p>
+Click here to visit 
+<a href="https://www.google.com" target="_blank">Google</a>
+</p>
+<!-- Nested Table -->
+<h2>Student Details</h2>
+<table border="1" cellpadding="10">
+<tr>
+<th>Name</th>
+<th>Subjects & Marks</th>
+</tr>
+<tr>
+<td>John Doe</td>
+<td>
+<!-- Nested Table -->
+<table border="1" cellpadding="5">
+<tr>
+<th>Subject</th>
+<th>Marks</th>
+</tr>
+<tr>
+<td>Mathematics</td>
+<td>85</td>
+</tr>
+<tr>
+<td>Computer Science</td>
+<td>92</td>
+</tr>
+<tr>
+<td>Physics</td>
+<td>78</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
