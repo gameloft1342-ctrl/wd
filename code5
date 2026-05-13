@@ -1,0 +1,46 @@
+5.. Write a JavaScript program for a simple calculator using functions and switch-case. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Simple Calculator</title> 
+    <script> 
+        function calculate() { 
+            var num1 = parseFloat(document.getElementById("n1").value); 
+            var num2 = parseFloat(document.getElementById("n2").value); 
+            var op = document.getElementById("op").value; 
+            var result; 
+            switch(op) { 
+                case "+": 
+                    result = num1 + num2; 
+                    break; 
+                case "-": 
+                    result = num1 - num2; 
+                    break; 
+                case "*": 
+                    result = num1 * num2; 
+                    break; 
+                case "/": 
+                    result = num1 / num2; 
+                    break; 
+                default: 
+                    result = "Invalid operation"; 
+            } 
+            document.getElementById("result").innerHTML = "Result: " + result; 
+        } 
+    </script> 
+</head> 
+<body> 
+<h2>Simple Calculator</h2> 
+Number 1: <input type="text" id="n1"><br><br> 
+Number 2: <input type="text" id="n2"><br><br> 
+Operation: 
+<select id="op"> 
+    <option value="+">Addition</option> 
+    <option value="-">Subtraction</option> 
+    <option value="*">Multiplication</option> 
+    <option value="/">Division</option> 
+</select><br><br> 
+<button onclick="calculate()">Calculate</button> 
+<p id="result"></p> 
+</body> 
+</html>
